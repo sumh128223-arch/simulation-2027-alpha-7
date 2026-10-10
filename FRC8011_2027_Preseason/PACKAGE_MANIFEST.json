@@ -1,12 +1,14 @@
 {
-  "package": "FRC8011_2027_Preseason",
+  "package": "FRC8011_2027_Alpha7_GitHub",
+  "prepared": "2026-10-10",
   "validated": {
-    "build": "clean build passed",
+    "wpilib": "2027.0.0-alpha-7",
+    "java": 25,
+    "offlineBuildAndSimulationPreparation": "passed in source workspace",
     "tests": 7,
     "failures": 0,
-    "java": 25,
-    "wpilib": "2027.0.0-alpha-7",
-    "configurationScript": "CheckOnly passed"
+    "advantageScopeBundledVersion": "27.0.0-alpha-6",
+    "newLayout": "schema migrated; GUI export and live validation pending"
   },
   "files": [
     {
@@ -60,6 +62,16 @@
       "sha256": "6bbc0f0cf29d6fdda1ab6a0ea5a5e185c824a923fa04c89406385cffb22525b4"
     },
     {
+      "path": "ascope/layout-8011-alpha7.json",
+      "bytes": 7702,
+      "sha256": "479091faeae6701dcc1a26bb9571f464b7ca7240b767367d14bbd0de0092e0f1"
+    },
+    {
+      "path": "ascope/layout-8011-alpha7说明.md",
+      "bytes": 1443,
+      "sha256": "73840263b27a5126bffe3c003e899e80df3f63ff4c07e584b23709c080e1f8f8"
+    },
+    {
       "path": "ascope/layout-8011-live.json",
       "bytes": 12289,
       "sha256": "bb32c77d1ad606cd61dcdcffc7e67d68e95d29a74648c151019eaddbcababee3"
@@ -91,8 +103,8 @@
     },
     {
       "path": "docs/simulation-2027-alpha-7.md",
-      "bytes": 32844,
-      "sha256": "46efd80c9878a05f31993fe0c6fbcec58e1ad2d418c69591aa1f08c21da2a08f"
+      "bytes": 35682,
+      "sha256": "92557795af7d62b910e966dfea76810899c817a7e1e987129b4af94a420cc267"
     },
     {
       "path": "docs/viz/gltf-align-coordinate.png",
@@ -141,8 +153,8 @@
     },
     {
       "path": "README.md",
-      "bytes": 3797,
-      "sha256": "f59b3dad7b6eba8c0817e21224982db28ba93afddf0ff96712ff043124357c93"
+      "bytes": 6585,
+      "sha256": "bd3154f23544dedad5adf96b99aaef8d6f099dcac9ac8af90fbcaf62f7e3f2ee"
     },
     {
       "path": "scripts/configure-simulation.ps1",
@@ -150,9 +162,19 @@
       "sha256": "85d53f79b69724b5720468c02eb0e4e84129b620b80ce0350830190d460ff67b"
     },
     {
+      "path": "scripts/migrate-ascope-layout.py",
+      "bytes": 3722,
+      "sha256": "3fe556875bb47377d804492879dfd8c625e4fce5d196776d41645283d87f894d"
+    },
+    {
       "path": "settings.gradle",
       "bytes": 1530,
       "sha256": "4dcd9354212ce468aa540648daf7def96b4069d7833f137cb19648d8c6efe33a"
+    },
+    {
+      "path": "simulation-2027-alpha-7.md",
+      "bytes": 4327,
+      "sha256": "2741d2e9fcb2f956662cb729ee1259b70784e0855f165358d108776fe23d657e"
     },
     {
       "path": "src/main/deploy/apriltags/andymark/2026-hub.json",
