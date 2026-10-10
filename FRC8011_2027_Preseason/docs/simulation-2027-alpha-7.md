@@ -1,7 +1,7 @@
 # 仿真流程 & 手柄操作说明（WPILib 2027 Alpha 7）
 
-> 更新日期：2026-10-09。本文包含原有仿真与手柄说明，以及本次两个新 GLB 的接入、坐标校准、仿真抖动修复和排错流程。
-> 当前成功组合：**2027_alpha7 WPILib VS Code + AdvantageScope (WPILib) 2027_alpha5**。
+> 更新日期：2026-10-10。本文包含原有仿真与手柄说明，以及本次两个新 GLB 的接入、坐标校准、仿真抖动修复和排错流程。
+> 环境：WPILib alpha7、Java 25 和其配套 AdvantageScope。本机配套 AdvantageScope 内部版本为 27.0.0-alpha-6；此前模型显示验证使用旧版软件。新布局与新电脑吸球/射球仍需实际验证。
 > 当前模型名称：**8011 GLB 2027**。该配置已完成实际仿真显示和动作验证。
 >
 > **一句话结论**：手柄统一用 `CommandNiDsXboxController`，**直接调类自带的方法**
@@ -18,7 +18,7 @@
 | Java | 25；可使用 WPILib 安装目录提供的 JDK |
 | 日志框架 | AdvantageKit（`Logger.recordOutput` → NetworkTables） |
 | NetworkTables | NT4：仿真服务器端口 `5810`，WebServer 端口 `5800` |
-| 可视化 | AdvantageScope (WPILib) 2027_alpha5，3D Field |
+| 可视化 | WPILib alpha7 配套 AdvantageScope（本机内部版本 27.0.0-alpha-6），3D Field |
 | 输入设备 | Xbox 手柄 |
 
 `gradle.properties` 中的 `org.gradle.java.home` 是每台电脑自己的 JDK 路径，该文件已被 `.gitignore` 排除。**JDK 所在目录的 Alpha 版本名称，不代表项目依赖的版本**；项目的 GradleRIO 版本由 `build.gradle` 决定，JDK 则需要支持 Java 25。
@@ -37,7 +37,39 @@ org.gradle.java.home=<WPILib安装目录>/2027_alpha7/jdk
 
 ### 2.1 启动机器人程序
 
-1. 用 **2027_alpha7 WPILib VS Code** 打开整个项目文件夹 `FRC8011_2027_Preseason`。
+#### 新电脑第一次手动配置（可选独立离线包）
+
+本 GitHub 上传目录不包含 `offline-kit`。有网络时使用正常 Gradle 下载；只有另行取得完整离线包时才执行下面的缓存复制命令。
+
+无需使用 `offline-kit` 的快捷启动文件。先完成 WPILib 2027 alpha7 安装，在 WPILib VS Code 打开 `FRC8011_2027_Preseason`，打开 PowerShell 终端，确保终端位于包含 `build.gradle` 的项目目录。
+
+1. 在项目目录创建或修改 `gradle.properties`，填写新电脑实际 JDK 路径。默认公共安装位置为：
+
+   ```properties
+   org.gradle.java.home=C:/Users/Public/wpilib/2027_alpha7/jdk
+   ```
+
+2. 在该终端手动将离线缓存复制到新电脑的默认 Gradle 用户目录。下面两条命令只补充/覆盖同名文件，不删除目标已有文件；完整总文件夹中的 `offline-kit` 必须保留在源码目录旁边。Robocopy 返回码 0～7 表示成功或存在复制差异，8 及以上表示失败。
+
+   ```powershell
+   robocopy "..\offline-kit\gradle-home\caches" "$env:USERPROFILE\.gradle\caches" /E /XF *.lock
+   robocopy "..\offline-kit\gradle-home\permwrapper" "$env:USERPROFILE\.gradle\permwrapper" /E /XF *.lck
+   ```
+
+   若此前自己设置过 `GRADLE_USER_HOME`，以上目标目录应改为那个目录。WPILib 的 `maven` 本地依赖由安装程序安装，不在这两条复制命令中。
+
+3. 在该终端设置 Java 25，并执行严格离线检查：
+
+   ```powershell
+   $env:JAVA_HOME = 'C:\Users\Public\wpilib\2027_alpha7\jdk'
+   .\gradlew.bat --offline test jar extractReleaseNative simulateExternalJava --console=plain
+   ```
+
+   安装位置不同则修改上述 Java 路径。看到 `BUILD SUCCESSFUL` 后，按下面原有的命令面板流程启动即可。若要保证启动也严格不尝试访问网络，可在同一个终端手动执行 ` .\gradlew.bat --offline simulateJava --console=plain`，保持窗口打开。
+
+#### 日常手动启动
+
+1. 用 **2027_alpha7 WPILib VS Code** 打开本项目目录（包含 `build.gradle`）。
 2. 如果修改过 Java 代码，先完全停止旧仿真进程。仅取消 Enabled 不会加载新代码。
 3. `Ctrl+Shift+P` → `WPILib: Build Robot Code`，确认构建成功。
 4. 再运行 `WPILib: Simulate Robot Code`，扩展选择中勾选 **GUI** 和 **Driver Station**。
@@ -49,7 +81,7 @@ org.gradle.java.home=<WPILib安装目录>/2027_alpha7/jdk
 
 ### 2.2 选择新版模型资源目录
 
-打开 **AdvantageScope (WPILib) 2027_alpha5**，找到 `Use Custom Assets Folder`。选择克隆的仓库内这个目录：
+打开 **WPILib alpha7 配套 AdvantageScope**，找到 `Use Custom Assets Folder`。选择克隆的仓库内这个目录：
 
 ```text
 <仓库根目录>/ascope/assets
@@ -78,11 +110,11 @@ ascope/
 
 ### 2.3 导入布局并连接 Simulator
 
-1. `File → Import Layout`，选择项目中的 **`ascope/layout-8011-live.json`**。
+1. `File → Import Layout`，选择项目中的 **`ascope/layout-8011-alpha7.json`**。
 2. 不使用根目录 `layout.json`，也不使用旧 `ascope/layout.json` 作为这次新模型的操作入口。
 3. Preferences 中确认 `Live Source = NetworkTables 4`。
 4. `File → Connect to Simulator`，快捷键 `Ctrl+Shift+K`。
-5. 打开 `3D Field` 标签页，确认 **Robot 和 Robot Component 两项都选择 `8011 GLB 2027`**。
+5. 打开 `3D Field` 标签页，确认 **Robot 选择 `8011 GLB 2027`；Component 紧跟 Robot，绑定 `Visualization/Components`，使用父 Robot 的模型**。
 6. 场地选择 `FRC:2026 Field`：项目使用 2026 场地，工具版本为 2027 不代表场地也要选 2027。
 
 连接本机仿真使用 `localhost` / `127.0.0.1`，NT4 端口为 `5810`，不用填写真实机器人的队号 IP。
@@ -488,7 +520,7 @@ new Transform3d(
 | 文件 | 本次用途 / 改动 |
 |---|---|
 | `ascope/assets/Robot_8011/` | 隔离后的有效资源目录，只含 config、空基础 GLB 和两个新 GLB |
-| `ascope/layout-8011-live.json` | 基于原布局创建；保留实时 NT 数据源，机器人与组件名统一为 `8011 GLB 2027` |
+| `ascope/layout-8011-alpha7.json` | 基于原布局创建；保留实时 NT 数据源，机器人与组件名统一为 `8011 GLB 2027` |
 | 同一布局的 Ghost / vision 行 | 隐藏绿色、橙色 Duck Bot Ghost 和青色视觉连线，便于观察真实模型；没有禁用机器人视觉算法 |
 | 同一布局的 Line Graph | 左轴显示 LT，右轴显示 intake 角度，支持排错 |
 | `ascope/check_model_coordinates.py` | GLB 坐标检查与投影视图脚本，需要 Python、NumPy、Matplotlib；正常仿真不必运行 |

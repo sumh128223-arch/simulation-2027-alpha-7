@@ -1,0 +1,214 @@
+{
+  "hubs": [
+    {
+      "x": 50,
+      "y": 50,
+      "width": 1400,
+      "height": 900,
+      "state": {
+        "sidebar": {
+          "width": 348,
+          "expanded": [
+            "/AdvantageKit",
+            "/AdvantageKit/RealOutputs",
+            "/AdvantageKit/RealOutputs/Simulation",
+            "/AdvantageKit/RealOutputs/Simulation/Controls",
+            "/AdvantageKit/RealOutputs/Simulation/Intake",
+            "/AdvantageKit/RealOutputs/Visualization"
+          ]
+        },
+        "tabs": {
+          "selected": 1,
+          "tabs": [
+            {
+              "type": 0,
+              "title": "",
+              "controller": null,
+              "controllerUUID": "4g4hx0oufuf2n9ruwgwap6ub5dzgs9e1",
+              "renderer": "",
+              "controlsHeight": 0
+            },
+            {
+              "type": 3,
+              "title": "3D Field",
+              "controller": {
+                "sources": [
+                  {
+                    "type": "robot",
+                    "logKey": "NT:/AdvantageKit/RealOutputs/Odometry/EstimatedPose",
+                    "logType": "Pose2d",
+                    "visible": true,
+                    "options": {
+                      "model": "8011 GLB 2027"
+                    }
+                  },
+                  {
+                    "type": "component",
+                    "logKey": "NT:/AdvantageKit/RealOutputs/Visualization/Components",
+                    "logType": "Pose3d[]",
+                    "visible": true,
+                    "options": {}
+                  },
+                  {
+                    "type": "swerveModuleVelocities",
+                    "logKey": "NT:/AdvantageKit/RealOutputs/Swerve/SwerveStates/OptimizedGoalModuleStates",
+                    "logType": "SwerveModuleState[]",
+                    "visible": true,
+                    "options": {
+                      "color": "#ff8c00",
+                      "arrangement": "0,3,1,2"
+                    }
+                  },
+                  {
+                    "type": "swerveModuleVelocities",
+                    "logKey": "NT:/AdvantageKit/RealOutputs/Swerve/SwerveStates/GoalModuleStates",
+                    "logType": "SwerveModuleState[]",
+                    "visible": true,
+                    "options": {
+                      "color": "#00ff00",
+                      "arrangement": "0,3,1,2"
+                    }
+                  },
+                  {
+                    "type": "gamePiece",
+                    "logKey": "NT:/AdvantageKit/RealOutputs/Visualization/Fuel/movingGamePieces",
+                    "logType": "Pose3d[]",
+                    "visible": true,
+                    "options": {
+                      "variant": "Fuel"
+                    }
+                  },
+                  {
+                    "type": "gamePiece",
+                    "logKey": "NT:/AdvantageKit/RealOutputs/Visualization/Fuel/pickableGamePiecePose",
+                    "logType": "Pose3d[]",
+                    "visible": true,
+                    "options": {
+                      "variant": "Fuel"
+                    }
+                  },
+                  {
+                    "type": "trajectory",
+                    "logKey": "NT:/AdvantageKit/RealOutputs/Swerve/FollowTrajectory/TrajectoryPoses",
+                    "logType": "Pose2d[]",
+                    "visible": true,
+                    "options": {
+                      "color": "#00ffff",
+                      "size": "normal"
+                    }
+                  },
+                  {
+                    "type": "gamePiece",
+                    "logKey": "NT:/AdvantageKit/RealOutputs/Visualization/Fuel/onboardGamePiecePose",
+                    "logType": "Pose3d[]",
+                    "visible": true,
+                    "options": {
+                      "variant": "Fuel"
+                    }
+                  }
+                ],
+                "game": "FRC:2026 Field"
+              },
+              "controllerUUID": "jjmf30bsqcmgt7rw529b7yzt3wsqf1tx",
+              "renderer": {
+                "cameraIndex": -1,
+                "orbitFov": 50,
+                "cameraPosition": [
+                  -6.082772330780736,
+                  9.490771412030876,
+                  -10.752241289860219
+                ],
+                "cameraTarget": [
+                  3.9217291080906427,
+                  -5.949940574967595,
+                  4.0848121886938635
+                ]
+              },
+              "controlsHeight": 200
+            },
+            {
+              "type": 1,
+              "title": "LT RT / Intake Angle",
+              "controller": {
+                "leftSources": [
+                  {
+                    "type": "stepped",
+                    "logKey": "NT:/AdvantageKit/RealOutputs/Simulation/Controls/LT",
+                    "logType": "Number",
+                    "visible": true,
+                    "options": {
+                      "size": "normal",
+                      "color": "#00cc66"
+                    }
+                  },
+                  {
+                    "type": "stepped",
+                    "logKey": "NT:/AdvantageKit/RealOutputs/Simulation/Controls/RT",
+                    "logType": "Number",
+                    "visible": true,
+                    "options": {
+                      "size": "normal",
+                      "color": "#ff6600"
+                    }
+                  }
+                ],
+                "rightSources": [
+                  {
+                    "type": "stepped",
+                    "logKey": "NT:/AdvantageKit/RealOutputs/Simulation/Intake/AngleDeg",
+                    "logType": "Number",
+                    "visible": true,
+                    "options": {
+                      "size": "normal",
+                      "color": "#e5b31b"
+                    }
+                  }
+                ],
+                "discreteSources": [],
+                "leftLockedRange": [
+                  -0.05,
+                  1.05
+                ],
+                "rightLockedRange": [
+                  -5,
+                  105
+                ],
+                "leftUnitConversion": {
+                  "autoTarget": null,
+                  "preset": null
+                },
+                "rightUnitConversion": {
+                  "autoTarget": null,
+                  "preset": null
+                },
+                "leftFilter": 0,
+                "rightFilter": 0,
+                "showRobotMode": true
+              },
+              "controllerUUID": "hlwr67tmlfbl2zdt2tm8qjuux56w6gfv",
+              "renderer": null,
+              "controlsHeight": 200
+            },
+            {
+              "type": 4,
+              "title": "Controls / Intake",
+              "controller": [
+                "NT:/AdvantageKit/RealOutputs/Simulation/Enabled",
+                "NT:/AdvantageKit/RealOutputs/Simulation/Controls/LT",
+                "NT:/AdvantageKit/RealOutputs/Simulation/Controls/RT",
+                "NT:/AdvantageKit/RealOutputs/Simulation/Intake/Goal",
+                "NT:/AdvantageKit/RealOutputs/Simulation/Intake/RollerGoal",
+                "NT:/AdvantageKit/RealOutputs/Simulation/Intake/AngleDeg"
+              ],
+              "controllerUUID": "a35af71e2f2c400e8d5c2d43a2bc4628",
+              "renderer": null,
+              "controlsHeight": 0
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "satellites": [],
+  "version": "27.0.0-alpha-6"
+}

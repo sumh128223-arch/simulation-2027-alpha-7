@@ -1,0 +1,6 @@
+offline-kit/
+release-export/
+**/gradle.properties
+**/.gradle/
+**/build/
+**/__pycache__/
