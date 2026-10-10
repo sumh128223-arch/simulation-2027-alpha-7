@@ -1,0 +1,798 @@
+{
+  "package": "FRC8011_2027_Preseason",
+  "validated": {
+    "build": "clean build passed",
+    "tests": 7,
+    "failures": 0,
+    "java": 25,
+    "wpilib": "2027.0.0-alpha-7",
+    "configurationScript": "CheckOnly passed"
+  },
+  "files": [
+    {
+      "path": ".github/workflows/build.yml",
+      "bytes": 635,
+      "sha256": "40bb168ca84a494922e21219a04ca8ceb56e15539572012ef035dd5c5f419980"
+    },
+    {
+      "path": ".gitignore",
+      "bytes": 3014,
+      "sha256": "cca041569b227f2f74447880f7b1e7cfda90692a434690537daa5a4a8e0acd28"
+    },
+    {
+      "path": ".vscode/launch.json",
+      "bytes": 522,
+      "sha256": "cb1b41ff8c6ae4c1cabfe9312e0a820c913f3e066ad907a8fc22c2057fab1d14"
+    },
+    {
+      "path": ".vscode/settings.json",
+      "bytes": 1859,
+      "sha256": "1824eb27f7a609b53f45e5a3e670ece499f3d11d232dad7183d2693f85a46a9f"
+    },
+    {
+      "path": ".wpilib/wpilib_preferences.json",
+      "bytes": 132,
+      "sha256": "d65aee91fbebd300f8650f406839e7f62cf62215946ef6ba460bbae15ab50d9b"
+    },
+    {
+      "path": "ascope/assets/Robot_8011/config.json",
+      "bytes": 383,
+      "sha256": "430290bbccf45dcd2f15e0af052918a37dc003ff72155d7a0760073020bff2a6"
+    },
+    {
+      "path": "ascope/assets/Robot_8011/model.glb",
+      "bytes": 132,
+      "sha256": "e47d024c30089d49d6836a129467c800065dcc3b392362c4a5688967c65d1919"
+    },
+    {
+      "path": "ascope/assets/Robot_8011/model_0.glb",
+      "bytes": 100459620,
+      "sha256": "1cec3165db62471ae21431b56c3095c5cd97894c0280e3994b81763301fde739"
+    },
+    {
+      "path": "ascope/assets/Robot_8011/model_1.glb",
+      "bytes": 2700188,
+      "sha256": "8965ad41f20866796eeb1119295aa3b798807f0de74318c579079ae44d7fd721"
+    },
+    {
+      "path": "ascope/check_model_coordinates.py",
+      "bytes": 2852,
+      "sha256": "6bbc0f0cf29d6fdda1ab6a0ea5a5e185c824a923fa04c89406385cffb22525b4"
+    },
+    {
+      "path": "ascope/layout-8011-live.json",
+      "bytes": 12289,
+      "sha256": "bb32c77d1ad606cd61dcdcffc7e67d68e95d29a74648c151019eaddbcababee3"
+    },
+    {
+      "path": "ascope/model-coordinate-views.png",
+      "bytes": 313767,
+      "sha256": "a39322fa566cd8254f1df349281e37039d121945759ee0c48ff8d0fb0d47aa5f"
+    },
+    {
+      "path": "ascope/模型接入说明.md",
+      "bytes": 2738,
+      "sha256": "ef9ff828e80282ec0879d44401ff09f35253fde7229ac6a12af3fb9eaa2020c8"
+    },
+    {
+      "path": "build.gradle",
+      "bytes": 5138,
+      "sha256": "1e3a8be0b5cd337e1599e1be5e2d5f6b36e0980742dd9633b6ca9a313cddccc4"
+    },
+    {
+      "path": "docs/migration-2027-alpha-7.md",
+      "bytes": 3440,
+      "sha256": "e50e27344238cf9b2b924f8a887fe26c598bc3a07990d7dddc29ed00d0129ccb"
+    },
+    {
+      "path": "docs/setup/README.md",
+      "bytes": 429,
+      "sha256": "035a499a822065d407382edcae0d34fc2adca80298e2267e09dc84dd8cf4d424"
+    },
+    {
+      "path": "docs/simulation-2027-alpha-7.md",
+      "bytes": 32844,
+      "sha256": "46efd80c9878a05f31993fe0c6fbcec58e1ad2d418c69591aa1f08c21da2a08f"
+    },
+    {
+      "path": "docs/viz/gltf-align-coordinate.png",
+      "bytes": 192308,
+      "sha256": "db4ad9de3cc9b91db854ef841cf06adf38ca070bdced5fddc10a9dd8640adc4b"
+    },
+    {
+      "path": "docs/viz/gltf-misaligned.png",
+      "bytes": 539844,
+      "sha256": "4940de70000e45cdc0b5d4b347d99ba1947f85f8091ac418326746429136dad9"
+    },
+    {
+      "path": "docs/viz/README.md",
+      "bytes": 3269,
+      "sha256": "76df43f13c5f0e6f4233f7fb6995dea0d0f20ae7e8404b0f718742b0fc635acb"
+    },
+    {
+      "path": "docs/viz/transformation-tree.md",
+      "bytes": 10046,
+      "sha256": "645833a5fd6446ea431f40bbde47ce347b871f6eda92595fd416c50c33f4ccc5"
+    },
+    {
+      "path": "docs/xbox-controller-mapping-fix.md",
+      "bytes": 9626,
+      "sha256": "3e73e8676f97dc1c4bec7a994ee8468833f076685eac14170565d6a5337d4ecd"
+    },
+    {
+      "path": "gradle/wrapper/gradle-wrapper.jar",
+      "bytes": 48966,
+      "sha256": "55243ef57851f12b070ad14f7f5bb8302daceeebc5bce5ece5fa6edb23e1145c"
+    },
+    {
+      "path": "gradle/wrapper/gradle-wrapper.properties",
+      "bytes": 267,
+      "sha256": "2da6a991faf534aa0a42f706288a74efdeeb78745b98f4409a9c3d6033511ec9"
+    },
+    {
+      "path": "gradlew",
+      "bytes": 8902,
+      "sha256": "6d342d5765739fc2c34a15759035d0bc5beef0c039b7ddd68b78e7e637b8dd21"
+    },
+    {
+      "path": "gradlew.bat",
+      "bytes": 2896,
+      "sha256": "fedad02c18e266ec094995a5751b7fe1eb6e74f66bf75db64fae2e50eb22c234"
+    },
+    {
+      "path": "README.md",
+      "bytes": 3797,
+      "sha256": "f59b3dad7b6eba8c0817e21224982db28ba93afddf0ff96712ff043124357c93"
+    },
+    {
+      "path": "scripts/configure-simulation.ps1",
+      "bytes": 2683,
+      "sha256": "85d53f79b69724b5720468c02eb0e4e84129b620b80ce0350830190d460ff67b"
+    },
+    {
+      "path": "settings.gradle",
+      "bytes": 1530,
+      "sha256": "4dcd9354212ce468aa540648daf7def96b4069d7833f137cb19648d8c6efe33a"
+    },
+    {
+      "path": "src/main/deploy/apriltags/andymark/2026-hub.json",
+      "bytes": 5952,
+      "sha256": "f4fbf2780e3c556192e6cf62a4faeb31e1c98cb4ff57c5a6c6d75c4723acd5d1"
+    },
+    {
+      "path": "src/main/deploy/apriltags/andymark/2026-none.json",
+      "bytes": 210,
+      "sha256": "5b4a3639318b26e2c23d92b0368e2009b2331181c7bc6be4fb5edd6ffcd310ab"
+    },
+    {
+      "path": "src/main/deploy/apriltags/andymark/2026-official.json",
+      "bytes": 11574,
+      "sha256": "143a5494be9e999bf01a4bb8133675c2bcc89f30de94531f635d5cfcec36612b"
+    },
+    {
+      "path": "src/main/deploy/apriltags/andymark/2026-outpost.json",
+      "bytes": 1624,
+      "sha256": "504ffdf71d5ef1ee550b7869afc0675a27224efc2d65d1a118124ed34b9758d8"
+    },
+    {
+      "path": "src/main/deploy/apriltags/andymark/2026-tower.json",
+      "bytes": 1626,
+      "sha256": "ffd8e4b462d7c33f6ce9e7ee816d1e91a825213365976073c097f50bde01942d"
+    },
+    {
+      "path": "src/main/deploy/apriltags/welded/2026-hub.json",
+      "bytes": 6074,
+      "sha256": "a152359643c315b03a8367dbfc7e30443d77af70b4388d7d393729fa1f378a6f"
+    },
+    {
+      "path": "src/main/deploy/apriltags/welded/2026-none.json",
+      "bytes": 208,
+      "sha256": "657fee13f21ae8927925fe82006a0eaf5450348d6720ea2ece8b6a29c0cdf589"
+    },
+    {
+      "path": "src/main/deploy/apriltags/welded/2026-official.json",
+      "bytes": 11669,
+      "sha256": "d8149a1a70513528e3c0dfa2527fca1f953892603045868c5d2b3367f583c092"
+    },
+    {
+      "path": "src/main/deploy/apriltags/welded/2026-outpost.json",
+      "bytes": 1632,
+      "sha256": "95fd7ec7aed39c0f60938b464e5920d627de5c5f12c1205562a4bd02a7e0fedd"
+    },
+    {
+      "path": "src/main/deploy/apriltags/welded/2026-tower.json",
+      "bytes": 1615,
+      "sha256": "c9071831006af40e9a825bf5822751490fe2891f1b220ab5f67e4e570f46f1f3"
+    },
+    {
+      "path": "src/main/deploy/choreo/2026.chor",
+      "bytes": 4166,
+      "sha256": "eb2db978bbcf42b7a62dd515d9dda5e38a8bf044945ee3206aa2bb5ba51d0842"
+    },
+    {
+      "path": "src/main/deploy/choreo/depot2leftShoot.traj",
+      "bytes": 12960,
+      "sha256": "9f375f081bdc382861471277791746745efc26dc10a287a45cf1fd7f39c763a3"
+    },
+    {
+      "path": "src/main/deploy/choreo/leftFront2leftShoot_far.traj",
+      "bytes": 63009,
+      "sha256": "518df1f2e1ae51917bb7712a3159acf4656aa56b354df316aa38c0833f7e1c8a"
+    },
+    {
+      "path": "src/main/deploy/choreo/leftShoot2Depot.traj",
+      "bytes": 18925,
+      "sha256": "78fdb2ae2a3c6afa79a732d264bf5e154718dfcb1094ffb03957bf9f72682fd7"
+    },
+    {
+      "path": "src/main/deploy/choreo/leftShoot_close.traj",
+      "bytes": 61761,
+      "sha256": "54fb532835d6b49f13f733ce8ef7226ba54ef65470bb6ff5e7ef95ee85ac3cf2"
+    },
+    {
+      "path": "src/main/deploy/choreo/leftShoot_far.traj",
+      "bytes": 68844,
+      "sha256": "f7f6bac6a1230216bb4b42d6f9da4f424f647fc7b235fe848235fb3b13040874"
+    },
+    {
+      "path": "src/main/deploy/choreo/leftShoot_mid.traj",
+      "bytes": 63140,
+      "sha256": "65217296f23fe99acd2cb256052b22e170d4e8270f6e2eacdcfdc3bf942675a8"
+    },
+    {
+      "path": "src/main/deploy/choreo/misc.traj",
+      "bytes": 25024,
+      "sha256": "3d3ca4bbce30ae77bbf9d1eedb6474f2a1937d5b7cd99dbdc1a971ff7ed01a33"
+    },
+    {
+      "path": "src/main/deploy/choreo/NewPath.traj",
+      "bytes": 12958,
+      "sha256": "af8c5008f984f2fd7add4680a411a2ef59dfddec1081b509c1466f9a9ef38dcf"
+    },
+    {
+      "path": "src/main/deploy/choreo/outpost2depot.traj",
+      "bytes": 21817,
+      "sha256": "ffa4e82bfc722e4493ae350d4aaa1737e52e2981290f0bb14b1b070f1797983e"
+    },
+    {
+      "path": "src/main/deploy/choreo/outpost2rightShoot.traj",
+      "bytes": 11064,
+      "sha256": "8999c9a70c5c1ee1574f3f6eb504205f10c121ea3cb73f2fca6f507e68979bda"
+    },
+    {
+      "path": "src/main/deploy/choreo/rightback2outpost.traj",
+      "bytes": 8072,
+      "sha256": "3c1c9139b638cab4faac985be8163d886f1e99f19621a824bc5f48959ebc9f64"
+    },
+    {
+      "path": "src/main/deploy/choreo/rightFront2rightShoot_far.traj",
+      "bytes": 62426,
+      "sha256": "8624a6a18255d41ac9c45be29da29dde52b6410c4977391418eeac29c6cbf34e"
+    },
+    {
+      "path": "src/main/deploy/choreo/rightShoot2outpost.traj",
+      "bytes": 11123,
+      "sha256": "286d371dd3cc690d29ee38da1ee6528caa02f8c181d711475931533eda5a237a"
+    },
+    {
+      "path": "src/main/deploy/choreo/rightShoot_close.traj",
+      "bytes": 67871,
+      "sha256": "804f467f4a667d03728c7ce77fbc42d36c4cf8690ff54b9743c3efd725e39c9a"
+    },
+    {
+      "path": "src/main/deploy/elastic-layout.json",
+      "bytes": 5004,
+      "sha256": "3e0b23770a468492c1de1feab1c3471b8f168fb3a2f4e25425cbdaf55319d627"
+    },
+    {
+      "path": "src/main/java/frc/lib/dashboard/Alert.java",
+      "bytes": 4900,
+      "sha256": "606d8b130a2c37fb0fddc8a9c6dbf3fa5da7fda87eaafae472f1a4d6ceb3c32d"
+    },
+    {
+      "path": "src/main/java/frc/lib/dashboard/AllianceValue.java",
+      "bytes": 638,
+      "sha256": "58a2dec930f0039ce288eba43bc82d5a15a6bb40bf013cb662447d0458d21432"
+    },
+    {
+      "path": "src/main/java/frc/lib/dashboard/BooleanChooser.java",
+      "bytes": 1572,
+      "sha256": "eba8745d837ae35e986f0ad72e2cce93fa57c5e78b244503f6a2a9683dad68a3"
+    },
+    {
+      "path": "src/main/java/frc/lib/dashboard/LoggedTunableNumber.java",
+      "bytes": 7426,
+      "sha256": "11ea09db47276c93c25676f276c520f6d61b2e9c456e618a8ca86a6d4a7f95c7"
+    },
+    {
+      "path": "src/main/java/frc/lib/dashboard/SwitchableChooser.java",
+      "bytes": 2939,
+      "sha256": "6e4442cea56137a4a072ec5cb1fc468a51c553ae5bdee8a8780ae5bfbd15c091"
+    },
+    {
+      "path": "src/main/java/frc/lib/interfaces/CanId.java",
+      "bytes": 601,
+      "sha256": "ed02720b178663c243ff4d7640e8269b008ee55b088a8a9e35c9498477775991"
+    },
+    {
+      "path": "src/main/java/frc/lib/interfaces/ComposedCommands.java",
+      "bytes": 682,
+      "sha256": "db0da3035ba9bb3c4811da0a20ea5eaca305a458e02232228c64b41d5c3695c7"
+    },
+    {
+      "path": "src/main/java/frc/lib/interfaces/led/Color.java",
+      "bytes": 725,
+      "sha256": "07d7dc6879850121865d80169bd1615aaaa79b489166742c4dcc67ed030b7107"
+    },
+    {
+      "path": "src/main/java/frc/lib/interfaces/led/TimedColor.java",
+      "bytes": 238,
+      "sha256": "574529e283831403a876ec2715da927e28817af6190adf98bdc858dcea01ac8b"
+    },
+    {
+      "path": "src/main/java/frc/lib/interfaces/motor/DCMotorIO.java",
+      "bytes": 7459,
+      "sha256": "e404adc0d5d24e3877b9307721f19a82055a411f2581eeb74bfb05d553df337c"
+    },
+    {
+      "path": "src/main/java/frc/lib/interfaces/motor/DCMotorIOSim.java",
+      "bytes": 8590,
+      "sha256": "21afacbe27fd24c5cf75437bf7613f8f35e7852c0b5c045d51d5a710425da94d"
+    },
+    {
+      "path": "src/main/java/frc/lib/interfaces/motor/DCMotorIOTalonFX.java",
+      "bytes": 10639,
+      "sha256": "fa39a880f468f7f31f4a4221054beb5af29afb2a00f09f08a4b12d7698b0b309"
+    },
+    {
+      "path": "src/main/java/frc/lib/interfaces/motor/GenericArmIO.java",
+      "bytes": 890,
+      "sha256": "8ca10ffe12be800129173f007a178c6b1658ec6997d3efe57a913badcf14d534"
+    },
+    {
+      "path": "src/main/java/frc/lib/interfaces/motor/GenericArmIOKraken.java",
+      "bytes": 6789,
+      "sha256": "a56ba92392f79c7f57ff610cb7306e60fd54f943d09cca3c8ffdc2f06c1031b7"
+    },
+    {
+      "path": "src/main/java/frc/lib/interfaces/motor/GenericArmIOKrakenCancoder.java",
+      "bytes": 7464,
+      "sha256": "e328574e7ed564c104ff7d123df149f312fd0fd802ddf44a1d905ced8fc161c4"
+    },
+    {
+      "path": "src/main/java/frc/lib/interfaces/motor/GenericArmIOSim.java",
+      "bytes": 4489,
+      "sha256": "f906245e69aac5e43ae9c6205530ef784c780c028ec1107ed52807e95586c3b0"
+    },
+    {
+      "path": "src/main/java/frc/lib/interfaces/motor/GenericElevatorIO.java",
+      "bytes": 870,
+      "sha256": "55092cdd6aa7b2379b27028ebccfe290bd81e46d31c506954a0babc56197e10b"
+    },
+    {
+      "path": "src/main/java/frc/lib/interfaces/motor/GenericElevatorIOKraken.java",
+      "bytes": 7287,
+      "sha256": "856a8ca2f57e610f39648ec1d5984db5d928fd2862cb2bbc02a1f2eabc92d683"
+    },
+    {
+      "path": "src/main/java/frc/lib/interfaces/motor/GenericElevatorIOSim.java",
+      "bytes": 4405,
+      "sha256": "7ac1009cbe4d434eba33c1c200963c29e4928c9724d06b11271b3ae21691002c"
+    },
+    {
+      "path": "src/main/java/frc/lib/interfaces/motor/GenericFlywheelIO.java",
+      "bytes": 867,
+      "sha256": "cd9130e195214aa175e17ce2774fe0798e124b771ff24f29b5662277863cd29f"
+    },
+    {
+      "path": "src/main/java/frc/lib/interfaces/motor/GenericFlywheelIOKraken.java",
+      "bytes": 6113,
+      "sha256": "e823a9df890037ba47c50cc1c7b1364f5c20c077941b13c931d5b65b437f29ef"
+    },
+    {
+      "path": "src/main/java/frc/lib/interfaces/motor/GenericFlywheelIOSim.java",
+      "bytes": 3049,
+      "sha256": "153a8b2dacf812a8914c05c1eeaaccfd42958fe96c6308dcd365180a361c38cb"
+    },
+    {
+      "path": "src/main/java/frc/lib/interfaces/motor/GenericRollerIO.java",
+      "bytes": 764,
+      "sha256": "d224e2aab1fc2338275e6f914b864c185f5eb976f14d27f4ff841976095ee6cc"
+    },
+    {
+      "path": "src/main/java/frc/lib/interfaces/motor/GenericRollerIOKraken.java",
+      "bytes": 5776,
+      "sha256": "a69f90f6e7edc28358993432102f61fef239e9c20765b207d5a4d993fc8e6477"
+    },
+    {
+      "path": "src/main/java/frc/lib/interfaces/motor/GenericRollerIOSim.java",
+      "bytes": 2779,
+      "sha256": "aab5fb0d1e1feab4d6580843022343f9243e3b524a3230eef90b59ffab0e15fc"
+    },
+    {
+      "path": "src/main/java/frc/lib/interfaces/motor/GenericRollerIOSimFlywheel.java",
+      "bytes": 2697,
+      "sha256": "7a419aa546a6501197fce4ad2ab77b25e26f297c4341bcf25f9ce7aef4cb9276"
+    },
+    {
+      "path": "src/main/java/frc/lib/interfaces/motor/SlamArmIO.java",
+      "bytes": 511,
+      "sha256": "0e1b9685ace2959045a33a88fc7e2298baf5018c97645e716dd471422d1f269f"
+    },
+    {
+      "path": "src/main/java/frc/lib/interfaces/motor/SlamArmIOKraken.java",
+      "bytes": 4778,
+      "sha256": "54439eaab3369fcbf38a9bc1ae2d21c151429b70686866a414e26ac6e513ae3c"
+    },
+    {
+      "path": "src/main/java/frc/lib/interfaces/motor/SlamArmIOSim.java",
+      "bytes": 1146,
+      "sha256": "46fd5374c4baf1e91bb6056d329ecfaeece4cc708cfab1e7d5939194dbc653d3"
+    },
+    {
+      "path": "src/main/java/frc/lib/interfaces/sensor/digital/BiDigitalInput.java",
+      "bytes": 368,
+      "sha256": "c3e88c14f95030e3480d67be50d2643dcb5e1ad9e6cecbe86ee7c0e0c15ba572"
+    },
+    {
+      "path": "src/main/java/frc/lib/interfaces/sensor/digital/BiDigitalInputCandi.java",
+      "bytes": 1538,
+      "sha256": "c2704da0b3ac7fbc9dabd2aa06e4b48f0ed3abed26d6f15e088087457441277b"
+    },
+    {
+      "path": "src/main/java/frc/lib/interfaces/sensor/digital/BiDigitalInputSim.java",
+      "bytes": 850,
+      "sha256": "666ea38666fce91759196e4a061378f0e9f436b1d93fdd950627649d7e0b853b"
+    },
+    {
+      "path": "src/main/java/frc/lib/interfaces/sensor/digital/DigitalInput.java",
+      "bytes": 225,
+      "sha256": "f80ea511676b55be7c597eb551e5c442756a1d738fb800be5e81b7df6cc52810"
+    },
+    {
+      "path": "src/main/java/frc/lib/interfaces/sensor/digital/DigitalInputRio.java",
+      "bytes": 373,
+      "sha256": "5c0176a57397850955654b44640f5da16615f1e304df6830a43e101c894adeaf"
+    },
+    {
+      "path": "src/main/java/frc/lib/interfaces/sensor/digital/DigitalInputSim.java",
+      "bytes": 403,
+      "sha256": "7ec5cf278847f31d90c879732fb942fd16d8f1816162ed8d6e4e876a4def94b0"
+    },
+    {
+      "path": "src/main/java/frc/lib/interfaces/sensor/gyro/GyroIO.java",
+      "bytes": 405,
+      "sha256": "3c34ec0e7698639dc0bbfbe45e7fe643faa337056979b37ca2b6c57b381bf762"
+    },
+    {
+      "path": "src/main/java/frc/lib/interfaces/sensor/gyro/GyroIOPigeon2.java",
+      "bytes": 1705,
+      "sha256": "da545412cb7c32895e1f5d8b83ab1975edad9580be47c1a3e650b05bbd01fde7"
+    },
+    {
+      "path": "src/main/java/frc/lib/interfaces/VirtualSubsystem.java",
+      "bytes": 1666,
+      "sha256": "28be2840372d206c151341bcad501fdeb8e079cf64802b4646b3e0c63c1b870f"
+    },
+    {
+      "path": "src/main/java/frc/lib/math/EqualsUtil.java",
+      "bytes": 708,
+      "sha256": "1cbe22be20772822df031519f84214f0f1bd6a5c1fbd5aa0ee7a7f789b90f30a"
+    },
+    {
+      "path": "src/main/java/frc/lib/math/GainsUtil.java",
+      "bytes": 1522,
+      "sha256": "c626a57bf921169c0d6117103bcbafe7b105105a264ed1400d40581bba77d7e9"
+    },
+    {
+      "path": "src/main/java/frc/lib/math/GeomUtil.java",
+      "bytes": 7005,
+      "sha256": "e33bc242782037dd7d294bc336c5a68eda8a8f070a7f58010bf383cd9058a2fb"
+    },
+    {
+      "path": "src/main/java/frc/lib/math/PolygonUtil.java",
+      "bytes": 2279,
+      "sha256": "c12146c4cb5db218e463e20eafb45d202d9d564ac6dc88085eebaa2030065e73"
+    },
+    {
+      "path": "src/main/java/frc/lib/math/PoseUtil.java",
+      "bytes": 854,
+      "sha256": "e0cb17abc76dd8f2aabb8b0e7bbe7e9d447c50cf591a5ac0c9e6ef9d6fb93f37"
+    },
+    {
+      "path": "src/main/java/frc/lib/math/RotationUtil.java",
+      "bytes": 1807,
+      "sha256": "9c18902a67b3d1bb609a5a85f74b293f2a166b7998d019e43f88bd72fbdb6eae"
+    },
+    {
+      "path": "src/main/java/frc/lib/math/TransformTree.java",
+      "bytes": 3499,
+      "sha256": "37aef33f6442e21589c2ecf9d6774035a30c0debbf3509b4b380f4231577ce01"
+    },
+    {
+      "path": "src/main/java/frc/lib/math/UnitConverter.java",
+      "bytes": 5005,
+      "sha256": "2d681f8536dcc804f2f0f09e00995cfa887882d70f22a344fb85677bf87f649d"
+    },
+    {
+      "path": "src/main/java/frc/lib/service/CommandSelector.java",
+      "bytes": 6418,
+      "sha256": "c37a58109fc0173bf3b916ef6747060c886df3a753fde5dfcf2e48b3e54fa76e"
+    },
+    {
+      "path": "src/main/java/frc/lib/service/GamePieceVisualizer.java",
+      "bytes": 10095,
+      "sha256": "441a0708f831fcccef004752664fc0df69105e003ec0a210dcb91076dff19b56"
+    },
+    {
+      "path": "src/main/java/frc/lib/service/MatchTimerSystem.java",
+      "bytes": 6003,
+      "sha256": "4d2e3d31564a5fdd8b01dafb550a22f95e9782d8774dfe2ce1725adf7a60e704"
+    },
+    {
+      "path": "src/main/java/frc/lib/service/TunableManager.java",
+      "bytes": 1144,
+      "sha256": "82113a8c75c75f2aa86f4fc86fcf74def37035bf75a6b227884ac76d8014d61c"
+    },
+    {
+      "path": "src/main/java/frc/lib/service/Visualizer.java",
+      "bytes": 4317,
+      "sha256": "fefdd2c4ec69fc05af6b205314882aa2d7908853e0cc7a6b643d537c8c698de1"
+    },
+    {
+      "path": "src/main/java/frc/lib/utils/GamePieceTracker.java",
+      "bytes": 4537,
+      "sha256": "c251834fdaba505f11b3eb65a36ef98162231849b35ffd176c49014b2b2fcc0b"
+    },
+    {
+      "path": "src/main/java/frc/lib/utils/Phoenix6Helper.java",
+      "bytes": 1170,
+      "sha256": "b8663d9597b992295753c0bacb66bc11c1ca980abd4762856265bb1945d300dc"
+    },
+    {
+      "path": "src/main/java/frc/lib/utils/TimeBuffer.java",
+      "bytes": 1485,
+      "sha256": "28cf208bacb978ee53e88eb291de4e7d3672da8a18159a854062b14c74cd60a4"
+    },
+    {
+      "path": "src/main/java/frc/rebuilt/Field.java",
+      "bytes": 6569,
+      "sha256": "9639bdbbdcdb43332f2a49cbba96de8313c70a1a98466121456b8f73e968ace5"
+    },
+    {
+      "path": "src/main/java/frc/robot/command/WaitAllianceConfirmed.java",
+      "bytes": 1064,
+      "sha256": "c81a0f2a338885e2200deb1a682127bb3b15cf80de0894f5af9c5e934ad5b5de"
+    },
+    {
+      "path": "src/main/java/frc/robot/Constants.java",
+      "bytes": 3657,
+      "sha256": "8f689917a4f28524dbcf1fb5a138ec9a5998dc618c3711479f7a242d625db55e"
+    },
+    {
+      "path": "src/main/java/frc/robot/Main.java",
+      "bytes": 410,
+      "sha256": "7d27872fd235bf47c90034776f6e5c32bbeb74098543b5ecef22200b60ffd7e0"
+    },
+    {
+      "path": "src/main/java/frc/robot/Odometry.java",
+      "bytes": 10353,
+      "sha256": "9111438d5d0c8a5baab270d7af92c7c6c6a92f7e20de346fc1e535305e0ae75f"
+    },
+    {
+      "path": "src/main/java/frc/robot/Robot.java",
+      "bytes": 7221,
+      "sha256": "b7c8d2401912b596f2c311d4e21157c03244d9cd682ac3935f67c567ff7d1f0b"
+    },
+    {
+      "path": "src/main/java/frc/robot/RobotContainer.java",
+      "bytes": 36546,
+      "sha256": "334d033d7fbf791aa60bcb041325c46970b3074e72bc0efc1a614e03aa7b71df"
+    },
+    {
+      "path": "src/main/java/frc/robot/subsystem/indexer/Indexer.java",
+      "bytes": 3849,
+      "sha256": "5fb01ea0457241b7a24da5399d6d3bf3c8ec1c844f5b480adc5cc3e39311f451"
+    },
+    {
+      "path": "src/main/java/frc/robot/subsystem/indexer/IndexerConfig.java",
+      "bytes": 1454,
+      "sha256": "a9de5fae8c479cbe7ede6e0acac533719e6267dec07ee24f94fa2897800e6821"
+    },
+    {
+      "path": "src/main/java/frc/robot/subsystem/indexer/IndexerGoal.java",
+      "bytes": 627,
+      "sha256": "4afd29dad2161d2ddb9027abf49487275f762e4f2f6e93076acda7feb1648306"
+    },
+    {
+      "path": "src/main/java/frc/robot/subsystem/intake/Intake.java",
+      "bytes": 8335,
+      "sha256": "153a92e82d1eaacf326c2b673c9b21b303cb94e2787476db3c75eb5541508dd9"
+    },
+    {
+      "path": "src/main/java/frc/robot/subsystem/intake/IntakeConfig.java",
+      "bytes": 3740,
+      "sha256": "dab67d2eb1a15159871d7db4d88ab10552e412edd669d34e8dd0b100a6dbf066"
+    },
+    {
+      "path": "src/main/java/frc/robot/subsystem/intake/IntakeGoal.java",
+      "bytes": 311,
+      "sha256": "11b27c5921c4c0d4b0052cf77f53a355699f8b5946f589f743f22141f98a524e"
+    },
+    {
+      "path": "src/main/java/frc/robot/subsystem/shooter/Shooter.java",
+      "bytes": 10099,
+      "sha256": "8b634172eddaf582d2ccc9c39a0688e344e2db1f8f6f00e5b661bdf589d3c60f"
+    },
+    {
+      "path": "src/main/java/frc/robot/subsystem/shooter/ShooterConfig.java",
+      "bytes": 4963,
+      "sha256": "2af2137081077d85705787ee9045a7ab9fd16446eee6bb5b74f5545ef0cfffd7"
+    },
+    {
+      "path": "src/main/java/frc/robot/subsystem/shooter/ShooterGoal.java",
+      "bytes": 2395,
+      "sha256": "dd546932cd6d1b8368842fe168d9f57c08229cfbf044b6b5211c710120f857de"
+    },
+    {
+      "path": "src/main/java/frc/robot/subsystem/swerve/command/FollowTrajectory.java",
+      "bytes": 6217,
+      "sha256": "0c2cdc26bf9678d9f96c9c1a70836a75e72114eb53d6df0b62299d6b1ae5e2c8"
+    },
+    {
+      "path": "src/main/java/frc/robot/subsystem/swerve/command/ProceedToPoint.java",
+      "bytes": 6780,
+      "sha256": "23def450dfa645fdf79796882c7773f89be65f6205657e5d5b2aaa0deee680d0"
+    },
+    {
+      "path": "src/main/java/frc/robot/subsystem/swerve/command/TeleopController.java",
+      "bytes": 10195,
+      "sha256": "4582762675cbe9bafea211edf1a7745ade27509d8cde89df46fc604d02276f67"
+    },
+    {
+      "path": "src/main/java/frc/robot/subsystem/swerve/command/WheelRadiusCharacterization.java",
+      "bytes": 3918,
+      "sha256": "8e9da85361fd6ffa8a5de538dc079d493b76f25c20b830c7b8f906413de96593"
+    },
+    {
+      "path": "src/main/java/frc/robot/subsystem/swerve/Module.java",
+      "bytes": 3922,
+      "sha256": "c131474894b0a371a740f418129900a98b5e329dedfd15d44553829345560fff"
+    },
+    {
+      "path": "src/main/java/frc/robot/subsystem/swerve/ModuleIO.java",
+      "bytes": 1211,
+      "sha256": "5c41f549d07d44b2e628c46fafd376cf6ae68f869ac7d8a14dae2439cede073d"
+    },
+    {
+      "path": "src/main/java/frc/robot/subsystem/swerve/ModuleIOKrakenFOC.java",
+      "bytes": 7932,
+      "sha256": "7d272292cae6a4587e1b607a93b5524dac4b16211cdf1af515f30e6dafcae974"
+    },
+    {
+      "path": "src/main/java/frc/robot/subsystem/swerve/ModuleIOSim.java",
+      "bytes": 4290,
+      "sha256": "07a1c36077b73c4190ef31b7225491838ce9e94eeec015afb7acb2a1f9b6de91"
+    },
+    {
+      "path": "src/main/java/frc/robot/subsystem/swerve/PhoenixOdometryThread.java",
+      "bytes": 3247,
+      "sha256": "a3364faf8256f6ac74f100d10b481cb2d96e70021c26a3812b9262c3c0d91c6a"
+    },
+    {
+      "path": "src/main/java/frc/robot/subsystem/swerve/SimOdometryThread.java",
+      "bytes": 3088,
+      "sha256": "a8540ba2a819739844a4930baefb1aadeb1c404f578acfc46f526f73228fbf82"
+    },
+    {
+      "path": "src/main/java/frc/robot/subsystem/swerve/Swerve.java",
+      "bytes": 20150,
+      "sha256": "a91872691b813f43d26fa6efc2b7a9009af469ca9afad0bc6f540fcd1122bf9b"
+    },
+    {
+      "path": "src/main/java/frc/robot/subsystem/swerve/SwerveConfig.java",
+      "bytes": 6828,
+      "sha256": "63011a072ada606559ee143713605b770b46239523e7b59cf6d640639b7a6fbc"
+    },
+    {
+      "path": "src/main/java/frc/robot/subsystem/vision/ApriltagVision.java",
+      "bytes": 12086,
+      "sha256": "aa95aac7eb4628daa29b61c993134c05e56e124b3ef3e7b47596addd9663b22a"
+    },
+    {
+      "path": "src/main/java/frc/robot/subsystem/vision/ApriltagVisionConfig.java",
+      "bytes": 809,
+      "sha256": "e93f8780e637a7816c7987d5ecbff685d0f9de10c6db42682fd3d8d975cb650f"
+    },
+    {
+      "path": "src/main/java/frc/robot/subsystem/vision/ApriltagVisionIO.java",
+      "bytes": 911,
+      "sha256": "f34c74a05d4f6635a3ac1aa7f52ce2ccd104aff8aaf70ee3f4d05c1b24760452"
+    },
+    {
+      "path": "src/main/java/frc/robot/subsystem/vision/ApriltagVisionIOPhoton.java",
+      "bytes": 4630,
+      "sha256": "e7d087eb4c01b1ecc5df83eafbc735aecd165420c1d48553df74cca01129ee88"
+    },
+    {
+      "path": "src/main/java/frc/robot/subsystem/vision/ApriltagVisionIOPhotonSim.java",
+      "bytes": 1244,
+      "sha256": "eb641d222d347cf6a289c4234464004eb3b6b8de7eebabacf4113765702cf2c5"
+    },
+    {
+      "path": "src/main/java/frc/robot/TrajectorySet.java",
+      "bytes": 2427,
+      "sha256": "0adfca62e1964e6f3daafb918474a96de0dd9aa5395b24f332dd5bdf11dfb2f0"
+    },
+    {
+      "path": "src/test/java/frc/lib/dashboard/DashboardMigrationTest.java",
+      "bytes": 1092,
+      "sha256": "0b63192d18ea76a8a4b0168be01d2ceb50db6ea896f7a1e6ffa2f0568651a7d9"
+    },
+    {
+      "path": "src/test/java/frc/lib/interfaces/motor/SlamArmIOSimTest.java",
+      "bytes": 726,
+      "sha256": "6cb2358e4e6aaebb254538ab9267262b1f2d73b260f4492fa956be2600db941c"
+    },
+    {
+      "path": "src/test/java/frc/rebuilt/FieldMigrationTest.java",
+      "bytes": 1340,
+      "sha256": "03aacf6b7ebd7a4fbc2f94397fe4ed11c68f0643ed7bd571448a68e957a95ac7"
+    },
+    {
+      "path": "src/test/java/frc/robot/IntakeControlsSimulationTest.java",
+      "bytes": 2528,
+      "sha256": "7f2667f91f17318e4c9fecb4a77adf8bd48dc760d498dc70ef42a0ccc751c2f6"
+    },
+    {
+      "path": "src/test/java/frc/robot/RobotSimulationTest.java",
+      "bytes": 1507,
+      "sha256": "26b4dc984ba76671260f500df7647f1ec6572cb5ce09ae0e570a619c45504e1b"
+    },
+    {
+      "path": "src/test/java/frc/robot/subsystem/swerve/SwerveMigrationTest.java",
+      "bytes": 3133,
+      "sha256": "a80f72df0eafc2e415f0b76650442698bda907029e286aef4eb9a886daa1beeb"
+    },
+    {
+      "path": "vendordeps/AdvantageKit.json",
+      "bytes": 994,
+      "sha256": "5198b49b85346deeb1b39153a06459d930bc49e236df8c9d31e255b2cf1b5cbf"
+    },
+    {
+      "path": "vendordeps/AprilTag.json",
+      "bytes": 2272,
+      "sha256": "b9cf55dbc807123ec1e8359e9bbaed60833d855127e46a3aa1559c7d74f60ad3"
+    },
+    {
+      "path": "vendordeps/CameraServer.json",
+      "bytes": 2889,
+      "sha256": "9098217d8624faff91ffe34b637ada953473d889461ff95e62d23b3ca4b5e2ee"
+    },
+    {
+      "path": "vendordeps/ChoreoLib2027Alpha.json",
+      "bytes": 1309,
+      "sha256": "24674cef963681dcabe96f059929ee76e58b6bb8ad245cdd34a2d141e7aa8acc"
+    },
+    {
+      "path": "vendordeps/CommandsV2.json",
+      "bytes": 1162,
+      "sha256": "db695bcca9f5136eb66e188778a9e583057c5ee4945b16c8935bf27618668e82"
+    },
+    {
+      "path": "vendordeps/Phoenix6-26.70.0-alpha-2.json",
+      "bytes": 14639,
+      "sha256": "d7c914fef22168154f003882d61c34c7a999317a7c24bb5476874a1cc9f2d169"
+    },
+    {
+      "path": "vendordeps/photonlib-v2027.0.0-alpha-2-75-g2df8fb1c.json",
+      "bytes": 2377,
+      "sha256": "4d7058ba66b8193e368d8962203118626b243811795505d9ad7ba83b92f07213"
+    },
+    {
+      "path": "WPILib-License.md",
+      "bytes": 1563,
+      "sha256": "6499a5136cf661d8562567430f123d03a2305dff5cd08bd438e9842464d654fe"
+    }
+  ]
+}

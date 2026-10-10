@@ -1,0 +1,28 @@
+{
+  "name": "8011 GLB 2027",
+  "rotations": [],
+  "position": [
+    0,
+    0,
+    0
+  ],
+  "cameras": [],
+  "components": [
+    {
+      "zeroedRotations": [],
+      "zeroedPosition": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "zeroedRotations": [],
+      "zeroedPosition": [
+        0,
+        0.30235,
+        -0.2075
+      ]
+    }
+  ]
+}
